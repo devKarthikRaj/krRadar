@@ -1,6 +1,5 @@
 #include "Capture.h"
 #include "rspduo/RspDuo.h"
-#include "usrp/Usrp.h"
 #include "hackrf/HackRf.h"
 #include "kraken/Kraken.h"
 #include <iostream>
@@ -85,23 +84,7 @@ std::unique_ptr<Source> Capture::factory_source(const std::string& type, c4::yml
     // Usrp
     else if (type == VALID_TYPE[1])
     {
-        std::string address, subdev;
-        std::vector<std::string> antenna;
-        std::vector<double> gain;
-        std::string _antenna;
-        double _gain;
-        config["address"] >> address;
-        config["subdev"] >> subdev;
-        config["antenna"][0] >> _antenna;
-        antenna.push_back(_antenna);
-        config["antenna"][1] >> _antenna;
-        antenna.push_back(_antenna);
-        config["gain"][0] >> _gain;
-        gain.push_back(_gain);
-        config["gain"][1] >> _gain;
-        gain.push_back(_gain);
-        return std::make_unique<Usrp>(type, fc, fs, path, &saveIq, 
-          address, subdev, antenna, gain);
+        // Do nothing
     }
     // HackRF
     else if (type == VALID_TYPE[2])
