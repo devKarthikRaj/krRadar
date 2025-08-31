@@ -1,0 +1,28 @@
+************************************************************************************************
+------------------------------------------------------------------------------------------------
+Geometry processor: default
+	Geo accuracy: 73.000000
+	Watertightness check: true
+	Self intersection check: false
+	Inheritance (all): false
+	Normal dominance (all): false
+	Normal dominance (ports): false
+	Flanges hollow: true
+	One shape per flange: false
+	Multi threading: false
+		max # of threads used: 1
+		requested max # of threads: 1
+		representation: indexed
+		method: multi thread (emulation-mode)
+		retry: no
+------------------------------------------------------------------------------------------------
+CAD processing settings are set to default
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+CAD Processing Version Info
+	ACIS version installed:	33.0.1
+	ACIS version used:	33.0.1
+------------------------------------------------------------------------------------------------
+Success method:	fb-single-thread-22
+************************************************************************************************
+

@@ -1,0 +1,45 @@
+=========================================
+== CST Matrix Calculation Priority Log ==
+=========================================
+Priorities are sorted in ascending order beginning with the lowest priority
+ 
+Group | Shape-ID | ShapeName | Material | User-priority | 2D/3D-Geometry | Material-attributes | Shape-attributes | Feature-ID | Schemetype
+1 | 33 | </cst/Boundaries/> Low^X | $NFSMaterial$ | n/a | no | normal.vacuum. | boundary. | n/a | FIT_TD
+1 | 34 | </cst/Boundaries/> Low^Y | $NFSMaterial$ | n/a | no | normal.vacuum. | boundary. | n/a | FIT_TD
+1 | 35 | </cst/Boundaries/> Low^Z | $NFSMaterial$ | n/a | no | normal.vacuum. | boundary. | n/a | FIT_TD
+1 | 36 | </cst/Boundaries/> Up^X | $NFSMaterial$ | n/a | no | normal.vacuum. | boundary. | n/a | FIT_TD
+1 | 37 | </cst/Boundaries/> Up^Y | $NFSMaterial$ | n/a | no | normal.vacuum. | boundary. | n/a | FIT_TD
+1 | 38 | </cst/Boundaries/> Up^Z | $NFSMaterial$ | n/a | no | normal.vacuum. | boundary. | n/a | FIT_TD
+2 | 31 | </cst/Ports/> 1^t0 | PEC | n/a | no | pec. | edge-element.wire. | n/a | FIT_TD
+2 | 32 | </cst/Ports/> 1^t1 | PEC | n/a | no | pec. | edge-element.wire. | n/a | FIT_TD
+3 | 1 | Boom_Lower:Boom | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 2 | Boom_Lower:E1 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 3 | Boom_Lower:E10 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 4 | Boom_Lower:E11 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 5 | Boom_Lower:E12 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 6 | Boom_Lower:E13 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 7 | Boom_Lower:E14 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 8 | Boom_Lower:E2 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 9 | Boom_Lower:E3 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 10 | Boom_Lower:E4 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 11 | Boom_Lower:E5 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 12 | Boom_Lower:E6 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 13 | Boom_Lower:E7 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 14 | Boom_Lower:E8 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 15 | Boom_Lower:E9 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 16 | Boom_Upper:Boom | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 17 | Boom_Upper:E1 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 18 | Boom_Upper:E10 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 19 | Boom_Upper:E11 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 20 | Boom_Upper:E12 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 21 | Boom_Upper:E13 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 22 | Boom_Upper:E14 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 23 | Boom_Upper:E2 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 24 | Boom_Upper:E3 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 25 | Boom_Upper:E4 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 26 | Boom_Upper:E5 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 27 | Boom_Upper:E6 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 28 | Boom_Upper:E7 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 29 | Boom_Upper:E8 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+3 | 30 | Boom_Upper:E9 | Alumina (96%) (loss free) | n/a | yes | normal.rho. | solid. | n/a | FIT_TD
+=========================================

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CSTAuxiliaryGeometry version="20170928">
+  <Objects>
+    <Object name="Connected" id="1">
+      <PointSet points="2.5 0.75 109" material="$00f219"/>
+    </Object>
+    <Object name="Dangling" id="2">
+      <PointSet points="1.5 0.75 109" material="$d919f2"/>
+    </Object>
+  </Objects>
+  <Materials>
+    <Material name="$00f219">
+      <Drawstyle color="0 0.949019611 0.0980392173" transparency="0" linestrength="3"/>
+    </Material>
+    <Material name="$d919f2">
+      <Drawstyle color="0.850980401 0.0980392173 0.949019611" transparency="0" linestrength="3"/>
+    </Material>
+  </Materials>
+  <Groups>
+    <Group name="Wire Endpoints" type="Undefined" ID="1">
+      <Item name="Connected" type="solid" id="1"/>
+      <Item name="Dangling" type="solid" id="2"/>
+    </Group>
+  </Groups>
+</CSTAuxiliaryGeometry>

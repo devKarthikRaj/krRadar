@@ -1,0 +1,67 @@
+% Standalone Adaptive Filter Test on DVB-T2 signal
+% Goal: Remove Undesired DVB-T2 Reference Signal from Surveillance Signal
+clear;
+close all;
+clc;
+
+% Select the WAV file (Update these paths as needed)
+refFile = 'C:\Users\kraj4\Documents\NTU Stuff\FYP\MATLAB krRadar DSP SITL Test Code\Recordings\538mhz_10s_ref.wav';
+surFile = 'C:\Users\kraj4\Documents\NTU Stuff\FYP\MATLAB krRadar DSP SITL Test Code\Recordings\538mhz_10s_sur.wav';
+
+% Read the WAV file
+disp('INFO: Loading WAV files...');
+[iqDataRef, Fs] = audioread(refFile);
+[iqDataSur, Fs] = audioread(surFile);
+
+% Convert stereo channels to I and Q
+I_ref = iqDataRef(:, 1);  % First column is In-phase (I)
+Q_ref = iqDataRef(:, 2);  % Second column is Quadrature (Q)
+I_sur = iqDataSur(:, 1);  % First column is In-phase (I)
+Q_sur = iqDataSur(:, 2);  % Second column is Quadrature (Q)
+
+% Combine I and Q into complex format
+IQ_complex_ref = I_ref + 1j * Q_ref;
+IQ_complex_sur = I_sur + 1j * Q_sur;
+
+% FFT Parameters
+NFFTref = 2^nextpow2(length(IQ_Complex_Ref)); % Find nearest power of 2 for FFT
+freqAxisRef = (-NFFTref/2:NFFTref/2-1) * (Fs / NFFTref) / 1e6; % Convert to MHz
+NFFTsur = 2^nextpow2(length(IQ_Complex_Sur)); % Find nearest power of 2 for FFT
+freqAxisSur = (-NFFTsur/2:NFFTsur/2-1) * (Fs / NFFTsur) / 1e6; % Convert to MHz
+% Compute FFT & Shift
+spectrum_ref = fftshift(abs(fft(IQ_complex_ref, NFFT)));
+spectrum_sur = fftshift(abs(fft(IQ_complex_sur, NFFT)));
+
+%% Step 3: Plot Original Frequency Spectra (Before Filtering)
+figure;
+subplot(3,1,1);
+plot(freqAxisRef, 20*log10(spectrum_ref / max(spectrum_ref)), 'b');
+xlabel('Frequency (MHz)'); ylabel('Magnitude (dB)');
+title('Reference Signal Spectrum (DVB-T2 Interference)'); grid on;
+xlim([min(freqAxis) max(freqAxis)]); ylim([-100, 5]);
+
+subplot(3,1,2);
+plot(freqAxis, 20*log10(spectrum_sur / max(spectrum_sur)), 'r');
+xlabel('Frequency (MHz)'); ylabel('Magnitude (dB)');
+title('Surveillance Signal Spectrum (Before FFT Division)'); grid on;
+xlim([min(freqAxis) max(freqAxis)]); ylim([-100, 5]);
+
+%% Step 4: Apply FFT Division to Remove DVB-T2 Interference
+epsilon = 1e-6; % Small value to prevent division by zero
+X_ref = fft(IQ_complex_ref, NFFT);
+X_sur = fft(IQ_complex_sur, NFFT);
+X_clean = X_sur ./ (X_ref + epsilon); % Frequency-Domain Division
+
+%% Step 5: Convert Back to Time Domain Using IFFT
+IQ_clean = ifft(X_clean, NFFT);
+
+%% Step 6: Compute & Plot Frequency Spectrum After FFT Division
+spectrum_clean = fftshift(abs(fft(IQ_clean, NFFT)));
+
+subplot(3,1,3);
+plot(freqAxis, 20*log10(spectrum_clean / max(spectrum_clean)), 'g');
+xlabel('Frequency (MHz)'); ylabel('Magnitude (dB)');
+title('Surveillance Signal Spectrum (After FFT Division)'); grid on;
+xlim([min(freqAxis) max(freqAxis)]); ylim([-100, 5]);
+
+disp('INFO: FFT-Based Interference Cancellation Complete.');

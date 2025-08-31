@@ -1,0 +1,36 @@
+With MeshSettings
+     With .ItemMeshSettings ("solid$Boom_Lower_1:Boom")
+          .SetMeshType "All" 
+          .Set "Transform", "1", "0", "0", "0", "3.33067e-16", "-1", "0", "1", "3.33067e-16" 
+     End With
+End With
+With MeshSettings
+     With .ItemMeshSettings ("solid$Boom_Upper_1:Boom")
+          .SetMeshType "All" 
+          .Set "Transform", "1", "0", "0", "0", "3.33067e-16", "-1", "0", "1", "3.33067e-16" 
+     End With
+End With
+With MeshSettings
+     With .ItemMeshSettings ("solid$Boom_Upper_1:Stub")
+          .SetMeshType "All" 
+          .Set "Transform", "1", "0", "0", "0", "3.33067e-16", "-1", "0", "1", "3.33067e-16" 
+     End With
+End With
+With MeshSettings
+     With .ItemMeshSettings ("solid$Boom_Upper_2:Boom")
+          .SetMeshType "All" 
+          .Set "Transform", "1", "0", "0", "0", "6.10623e-16", "-1", "0", "1", "6.10623e-16" 
+     End With
+End With
+With MeshSettings
+     With .ItemMeshSettings ("solid$Boom_Lower_2:Boom")
+          .SetMeshType "All" 
+          .Set "Transform", "1", "0", "0", "0", "6.10623e-16", "-1", "0", "1", "6.10623e-16" 
+     End With
+End With
+With MeshSettings
+     With .ItemMeshSettings ("solid$Boom_Lower_2:Stub")
+          .SetMeshType "All" 
+          .Set "Transform", "1", "0", "0", "0", "6.10623e-16", "-1", "0", "1", "6.10623e-16" 
+     End With
+End With

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CSTAuxiliaryGeometry version="20170928">
+  <Objects>
+    <Object name="Components\Boom_Lower:Boom" id="1"/>
+    <Object name="Components\Boom_Lower:E1" id="2"/>
+    <Object name="Components\Boom_Lower:E10" id="3"/>
+    <Object name="Components\Boom_Lower:E11" id="4"/>
+    <Object name="Components\Boom_Lower:E12" id="5"/>
+    <Object name="Components\Boom_Lower:E13" id="6"/>
+    <Object name="Components\Boom_Lower:E14" id="7"/>
+    <Object name="Components\Boom_Lower:E2" id="8"/>
+    <Object name="Components\Boom_Lower:E3" id="9"/>
+    <Object name="Components\Boom_Lower:E4" id="10"/>
+    <Object name="Components\Boom_Lower:E5" id="11"/>
+    <Object name="Components\Boom_Lower:E6" id="12"/>
+    <Object name="Components\Boom_Lower:E7" id="13"/>
+    <Object name="Components\Boom_Lower:E8" id="14"/>
+    <Object name="Components\Boom_Lower:E9" id="15"/>
+    <Object name="Components\Boom_Upper:Boom" id="16"/>
+    <Object name="Components\Boom_Upper:E1" id="17"/>
+    <Object name="Components\Boom_Upper:E10" id="18"/>
+    <Object name="Components\Boom_Upper:E11" id="19"/>
+    <Object name="Components\Boom_Upper:E12" id="20"/>
+    <Object name="Components\Boom_Upper:E13" id="21"/>
+    <Object name="Components\Boom_Upper:E14" id="22"/>
+    <Object name="Components\Boom_Upper:E2" id="23"/>
+    <Object name="Components\Boom_Upper:E3" id="24"/>
+    <Object name="Components\Boom_Upper:E4" id="25"/>
+    <Object name="Components\Boom_Upper:E5" id="26"/>
+    <Object name="Components\Boom_Upper:E6" id="27"/>
+    <Object name="Components\Boom_Upper:E7" id="28"/>
+    <Object name="Components\Boom_Upper:E8" id="29"/>
+    <Object name="Components\Boom_Upper:E9" id="30"/>
+    <Object name="Ports\port1" id="31"/>
+  </Objects>
+  <Materials/>
+  <Groups>
+    <Group name="Isolators" type="Isolator" ID="1">
+      <Item name="Components\Boom_Lower:Boom" type="solid" id="1"/>
+      <Item name="Components\Boom_Lower:E1" type="solid" id="2"/>
+      <Item name="Components\Boom_Lower:E10" type="solid" id="3"/>
+      <Item name="Components\Boom_Lower:E11" type="solid" id="4"/>
+      <Item name="Components\Boom_Lower:E12" type="solid" id="5"/>
+      <Item name="Components\Boom_Lower:E13" type="solid" id="6"/>
+      <Item name="Components\Boom_Lower:E14" type="solid" id="7"/>
+      <Item name="Components\Boom_Lower:E2" type="solid" id="8"/>
+      <Item name="Components\Boom_Lower:E3" type="solid" id="9"/>
+      <Item name="Components\Boom_Lower:E4" type="solid" id="10"/>
+      <Item name="Components\Boom_Lower:E5" type="solid" id="11"/>
+      <Item name="Components\Boom_Lower:E6" type="solid" id="12"/>
+      <Item name="Components\Boom_Lower:E7" type="solid" id="13"/>
+      <Item name="Components\Boom_Lower:E8" type="solid" id="14"/>
+      <Item name="Components\Boom_Lower:E9" type="solid" id="15"/>
+      <Item name="Components\Boom_Upper:Boom" type="solid" id="16"/>
+      <Item name="Components\Boom_Upper:E1" type="solid" id="17"/>
+      <Item name="Components\Boom_Upper:E10" type="solid" id="18"/>
+      <Item name="Components\Boom_Upper:E11" type="solid" id="19"/>
+      <Item name="Components\Boom_Upper:E12" type="solid" id="20"/>
+      <Item name="Components\Boom_Upper:E13" type="solid" id="21"/>
+      <Item name="Components\Boom_Upper:E14" type="solid" id="22"/>
+      <Item name="Components\Boom_Upper:E2" type="solid" id="23"/>
+      <Item name="Components\Boom_Upper:E3" type="solid" id="24"/>
+      <Item name="Components\Boom_Upper:E4" type="solid" id="25"/>
+      <Item name="Components\Boom_Upper:E5" type="solid" id="26"/>
+      <Item name="Components\Boom_Upper:E6" type="solid" id="27"/>
+      <Item name="Components\Boom_Upper:E7" type="solid" id="28"/>
+      <Item name="Components\Boom_Upper:E8" type="solid" id="29"/>
+      <Item name="Components\Boom_Upper:E9" type="solid" id="30"/>
+    </Group>
+    <Group name="Unconsidered" type="Isolator" ID="1">
+      <Item name="Ports\port1" type="solid" id="31"/>
+    </Group>
+  </Groups>
+</CSTAuxiliaryGeometry>

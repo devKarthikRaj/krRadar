@@ -1,0 +1,20 @@
+Post-processing Logfile 
+
+----------------------------------------------------------------------------------------
+Units settings: 
+
+  Dimensions: cm
+  Frequency:  MHz
+  Time:       ns
+
+----------------------------------------------------------------------------------------
+
+Template based post-processing started at: 2024-12-30 16:20:36
+
+  Evaluating 'Directivity, constant Phi=0': 0.738 s
+  Evaluating 'Directivity, constant Phi=0_1': 0.076 s
+
+  Total time: 0 s  ( = 0 h, 0 m, 0 s )
+
+Template based post-processing finished at: 2024-12-30 16:20:36
+----------------------------------------------------------------------------------------
