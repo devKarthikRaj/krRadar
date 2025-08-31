@@ -27,7 +27,7 @@ transmitted by other sources.
 
 #### Antenna Simulation
 - **Antenna**: Log-Periodic Dipole Array (LPDA) simulated and deployed.
-- **Setup**: Separate reference and surveillance antennas, 5 m apart, deployed near Changi Airport.
+- **Setup**: Separate reference and surveillance antennas, 5m apart, deployed near Changi Airport.
 
 ![Antenna Simulation](./Media/slide12.png)
 
@@ -41,7 +41,9 @@ transmitted by other sources.
 
 ## Experiments
 - **DVB-T2 Field Tests**: Aircraft approaching Changi Airport were detected using DVB-T2 signals at 538 MHz.
-- **Results**: Range-Doppler maps showed moving targets (aircraft). Challenges included:
+- **Results**: Range-Doppler maps showed moving targets (aircraft). <br>
+
+Challenges included:
   - Bulky equipment
   - Insufficient antenna height (trees blocking LOS to transmitter)
   - Time synchronization issues (Linux scheduling, phase drift)
